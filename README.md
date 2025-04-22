@@ -17,22 +17,23 @@ The **Grouped MLEM algorithm** modifies the classical MLEM by partitioning event
 This method is particularly suitable for high‑resolution or large‑scale detectors, such as in medical imaging, security scanning, or astrophysical applications.
 
 ## 📁 Repository Structure
-grouped-mlem-compton/ ├── src/
-│ ├── grouped_mlem.py # Main implementation of the Grouped MLEM algorithm
-│ ├── compton_geometry.py # System geometry, event generation, and kinematics
-│ └── utilities.py # Helper functions for normalization, metrics, and plotting
-
+```bash
+grouped-mlem-compton/
+├── src/
+│   ├── grouped_mlem.py      # Main implementation of the Grouped MLEM algorithm
+│   ├── compton_geometry.py  # System geometry, event generation, and kinematics
+│   ├── utilities.py         # Helper functions for normalization, metrics, and plotting
+│
 ├── data/
-│ └── example_events.npz # Sample input data (events, positions, energies)
-
+│   └── example_events.npz   # Sample input data (events, positions, energies)
+│
 ├── results/
-│ └── reconstruction.png # Sample output image of reconstructed source
-
+│   └── reconstruction.png   # Sample output image of reconstructed source
+│
 ├── test/
-│ └── test_mlem.py # Unit tests for algorithm components
+│   └── test_mlem.py         # Unit tests for algorithm components
+│
+├── README.md                # This file
+└── requirements.txt         # List of dependencies
+```
 
-├── configs/
-│ └── example_config.json # Example configuration file
-
-├── README.md # This file
-└── requirements.txt # List of dependencies
